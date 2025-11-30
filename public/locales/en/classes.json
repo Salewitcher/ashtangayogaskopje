@@ -1,0 +1,44 @@
+{
+  "title": "Our Classes",
+  "subtitle": "Choose the class that fits your level and start your yoga journey today.",
+  "beginnerTitle": "Beginner Yoga",
+  "beginnerDesc": "Perfect for newcomers. Learn foundational poses and breathing techniques in a supportive and friendly environment.",
+  "intermediateTitle": "Intermediate Yoga",
+  "intermediateDesc": "Designed for practitioners with some experience. Deepen your practice with longer sequences and more challenging poses.",
+  "advancedTitle": "Advanced Yoga",
+  "advancedDesc": "Push your limits with advanced asanas, complex sequences, and mindfulness techniques for serious practitioners.",
+
+  "backToTop": "Back to top",
+  "typesHeading": "Types of Yoga",
+
+  "yogaTypes": {
+    "ashtanga": {
+      "title": "Ashtanga Yoga",
+      "text": "Ashtanga Vinyasa Yoga is an active yoga style with a set sequence of postures linked with vinyasas. It develops discipline, flexibility, and focus, turning practice into meditation in motion.\n\nThe Primary Series (Yoga Chikitsa) creates heat and helps eliminate toxins. At Inside Yoga we offer Ashtanga for Beginners — a shortened sequence with slower pace and step-by-step instruction.\n\nSchedule: Mon, Wed, Fri 17:00–18:15; Tue, Thu 20:15–21:30."
+    },
+    "spicedAshtanga": {
+      "title": "Spiced Ashtanga",
+      "text": "Guided Ashtanga first-series classes with occasional additions from the second series. Suitable for beginners and intermediate practitioners with a focus on the Trishtana method.\n\nSchedule: Mon, Wed, Fri 18:45–20:00."
+    },
+    "mysore": {
+      "title": "Mysore Class",
+      "text": "Mysore-style Ashtanga practice is a self-paced practice in the presence of a teacher who gives adjustments and guidance. New students are given a shorter sequence that grows over time.\n\nPractice window: 07:30–09:30 (Tue & Thu)."
+    },
+    "power": {
+      "title": "Power Yoga",
+      "text": "Power Yoga is an active, dynamic form focusing on strength, endurance and faster flows. It uses breath and bandhas but sequences are not fixed. Great for fitness-minded practitioners and those seeking intensity.\n\nSchedule: Mon, Wed, Fri 20:15–21:30 (online)."
+    },
+    "vinyasa": {
+      "title": "Vinyasa Flow",
+      "text": "Vinyasa Flow links postures with vinyasas and breath. The teacher sequences classes to match the group’s needs and the class energy—creative and flowing.\n\nSchedule: Mon, Wed, Fri 09:30–10:45; Tue & Thu 18:45–20:00."
+    },
+    "restorative": {
+      "title": "Restorative + Yoga Nidra",
+      "text": "Restorative classes are slow, with fewer asanas and an emphasis on breath. They activate the parasympathetic nervous system and reduce stress—often followed by Yoga Nidra, a guided deep relaxation.\n\nSchedule: Sat 18:30–19:15."
+    },
+    "yin": {
+      "title": "Yin Yoga",
+      "text": "Yin Yoga is a slow practice where poses are held from 45 seconds up to several minutes to work the connective tissues. It increases joint circulation and deepens flexibility while cultivating stillness.\n\nSchedule: Weekly, 18:30–20:00."
+    }
+  }
+}

@@ -1,3 +1,4 @@
+// src/pages/Gallery.jsx
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -15,13 +16,9 @@ export default function Gallery() {
   };
 
   const closeModal = () => setIsOpen(false);
-
-  const prevImage = () =>
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  const prevImage = () => setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   const nextImage = () => setCurrentIndex((prev) => (prev + 1) % images.length);
-
-  const scrollToTop = () =>
-    window.scrollTo({ top: 0, behavior: "smooth" });
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   useEffect(() => {
     const handleKey = (e) => {
@@ -41,12 +38,12 @@ export default function Gallery() {
   }, []);
 
   return (
-    <section className="py-20 bg-gray-50 text-gray-800" id="gallery-root">
+    <section className="py-20 bg-gradient-to-br from-[#e8c8e3]/10 to-[#3cde51]/10 text-gray-800" id="gallery-root">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-[#3cde51] drop-shadow-lg">
           {t("title")}
         </h2>
-        <p className="text-lg sm:text-xl leading-relaxed mb-10">
+        <p className="text-gray-700 text-lg sm:text-xl leading-relaxed mb-10">
           {t("description")}
         </p>
 
@@ -57,7 +54,7 @@ export default function Gallery() {
               key={index}
               src={img.src}
               alt={img.alt}
-              className="w-full h-64 object-cover rounded shadow hover:scale-105 transition-transform cursor-pointer"
+              className="w-full h-64 object-cover rounded shadow hover:scale-105 transition-transform cursor-pointer border-2 border-[#3cde51]/30"
               onClick={() => openModal(index)}
             />
           ))}
@@ -67,7 +64,7 @@ export default function Gallery() {
         {showTop && (
           <button
             onClick={scrollToTop}
-            className="fixed bottom-6 right-6 bg-indigo-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-indigo-700 transition"
+            className="fixed bottom-6 right-6 bg-[#3cde51] text-white px-4 py-2 rounded-full shadow-lg hover:opacity-90 transition"
           >
             {t("backToTop")}
           </button>
@@ -91,7 +88,7 @@ export default function Gallery() {
 
               {/* Close button */}
               <button
-                className="absolute top-2 right-2 text-white text-2xl font-bold hover:text-red-500 transition"
+                className="absolute top-2 right-2 text-[#e8c8e3] text-2xl font-bold hover:text-[#3cde51] transition"
                 onClick={closeModal}
                 aria-label="Close"
               >
@@ -100,14 +97,14 @@ export default function Gallery() {
 
               {/* Prev / Next Arrows */}
               <button
-                className="absolute left-2 text-white text-3xl font-bold hover:text-indigo-400 transition"
+                className="absolute left-2 text-[#e8c8e3] text-3xl font-bold hover:text-[#3cde51] transition"
                 onClick={prevImage}
                 aria-label="Previous"
               >
                 &#10094;
               </button>
               <button
-                className="absolute right-2 text-white text-3xl font-bold hover:text-indigo-400 transition"
+                className="absolute right-2 text-[#e8c8e3] text-3xl font-bold hover:text-[#3cde51] transition"
                 onClick={nextImage}
                 aria-label="Next"
               >

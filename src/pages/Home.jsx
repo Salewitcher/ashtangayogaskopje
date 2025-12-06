@@ -15,8 +15,8 @@ export default function Home() {
           alt="Yoga Hero"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/20"></div>
+        {/* Optional: subtle black overlay for readability */}
+        <div className="absolute inset-0 bg-black/20"></div>
 
         {/* Hero Text */}
         <div className="relative z-10 text-center px-6">
@@ -32,13 +32,13 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="px-6 py-3 bg-indigo-600 text-white rounded-lg font-semibold shadow-lg hover:bg-indigo-700 transition-all duration-300"
+              className="px-6 py-3 bg-[#8FE5A1] text-white rounded-lg font-semibold shadow-lg hover:opacity-90 transition-all duration-300"
             >
               {t("home.book") || "Book a Class"}
             </Link>
             <Link
               to="/about"
-              className="px-6 py-3 border border-indigo-600 text-indigo-600 rounded-lg font-semibold shadow-lg hover:bg-indigo-50 transition-all duration-300"
+              className="px-6 py-3 bg-[#8FE5A1] text-white rounded-lg font-semibold shadow-lg hover:opacity-90 transition-all duration-300"
             >
               {t("home.learn") || "Learn More"}
             </Link>
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* OPTIONAL: You can add sections like About or Classes later as separate pages */}
+      {/* OPTIONAL: Add more sections like About, Classes, or Testimonials here */}
     </div>
   );
 }
